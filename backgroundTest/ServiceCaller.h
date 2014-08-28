@@ -9,4 +9,6 @@
 @interface ServiceCaller : NSObject
 
 - (int)runMethodThatWaitsForItsBlocksToComplete;
+
+- (int)runMethodOnAFNetworking;
 @end

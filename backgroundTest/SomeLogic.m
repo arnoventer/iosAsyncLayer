@@ -16,7 +16,9 @@
     //code here
 
     ServiceCaller * serviceCaller = [ServiceCaller new];
-    [serviceCaller runMethodThatWaitsForItsBlocksToComplete];
+//    [serviceCaller runMethodThatWaitsForItsBlocksToComplete];
+
+    int result = [serviceCaller runMethodOnAFNetworking];
 
     if(1 == 1) {
         [methods completedSuccessfully:@"ohai"];

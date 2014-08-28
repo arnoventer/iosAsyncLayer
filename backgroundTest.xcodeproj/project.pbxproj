@@ -21,6 +21,7 @@
 		B5DF54F119ADE16D0031434D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF54D319ADE16D0031434D /* UIKit.framework */; };
 		B5DF54F919ADE16D0031434D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5DF54F719ADE16D0031434D /* InfoPlist.strings */; };
 		B5DF54FB19ADE16D0031434D /* backgroundTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */; };
+		E825731B435E427AAD3EADA4 /* libPods-backgroundTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1857F0F471F84731BB933F43 /* libPods-backgroundTest.a */; };
 		F80121FEA3376A2D1E73433A /* SBStepUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F80126FAC0E7099789F11DBC /* SBStepUp.m */; };
 		F801252F98C489DCC8C8B5D8 /* MethodDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B44F946335984333BB6 /* MethodDelegates.m */; };
 		F801268070261535262C913A /* SomeLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B4C3C3873DE1D34A82E /* SomeLogic.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1857F0F471F84731BB933F43 /* libPods-backgroundTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-backgroundTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DF54CC19ADE16D0031434D /* backgroundTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backgroundTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DF54CF19ADE16D0031434D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5DF54D119ADE16D0031434D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +61,7 @@
 		B5DF54F619ADE16D0031434D /* backgroundTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "backgroundTestTests-Info.plist"; sourceTree = "<group>"; };
 		B5DF54F819ADE16D0031434D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backgroundTestTests.m; sourceTree = "<group>"; };
+		D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backgroundTest.xcconfig"; path = "Pods/Pods-backgroundTest.xcconfig"; sourceTree = "<group>"; };
 		F80124FCD4EC324B4EBAD627 /* DummyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyService.h; sourceTree = "<group>"; };
 		F80126FAC0E7099789F11DBC /* SBStepUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStepUp.m; sourceTree = "<group>"; };
 		F801293B256B40977F2D53CA /* SBStepUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStepUp.h; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 				B5DF54D219ADE16D0031434D /* CoreGraphics.framework in Frameworks */,
 				B5DF54D419ADE16D0031434D /* UIKit.framework in Frameworks */,
 				B5DF54D019ADE16D0031434D /* Foundation.framework in Frameworks */,
+				E825731B435E427AAD3EADA4 /* libPods-backgroundTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 				B5DF54F419ADE16D0031434D /* backgroundTestTests */,
 				B5DF54CE19ADE16D0031434D /* Frameworks */,
 				B5DF54CD19ADE16D0031434D /* Products */,
+				D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +128,7 @@
 				B5DF54D119ADE16D0031434D /* CoreGraphics.framework */,
 				B5DF54D319ADE16D0031434D /* UIKit.framework */,
 				B5DF54EE19ADE16D0031434D /* XCTest.framework */,
+				1857F0F471F84731BB933F43 /* libPods-backgroundTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5DF54FE19ADE16D0031434D /* Build configuration list for PBXNativeTarget "backgroundTest" */;
 			buildPhases = (
+				0E88C12C1A0B490492EB7CB9 /* Check Pods Manifest.lock */,
 				B5DF54C819ADE16D0031434D /* Sources */,
 				B5DF54C919ADE16D0031434D /* Frameworks */,
 				B5DF54CA19ADE16D0031434D /* Resources */,
+				5DC6324B968241D3AB43F44F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +253,8 @@
 			mainGroup = B5DF54C319ADE16D0031434D;
 			productRefGroup = B5DF54CD19ADE16D0031434D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				B5DF54CB19ADE16D0031434D /* backgroundTest */,
@@ -273,6 +283,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E88C12C1A0B490492EB7CB9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC6324B968241D3AB43F44F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-backgroundTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5DF54C819ADE16D0031434D /* Sources */ = {
@@ -409,6 +452,7 @@
 		};
 		B5DF54FF19ADE16D0031434D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,12 +460,14 @@
 				GCC_PREFIX_HEADER = "backgroundTest/backgroundTest-Prefix.pch";
 				INFOPLIST_FILE = "backgroundTest/backgroundTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		B5DF550019ADE16D0031434D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -429,6 +475,7 @@
 				GCC_PREFIX_HEADER = "backgroundTest/backgroundTest-Prefix.pch";
 				INFOPLIST_FILE = "backgroundTest/backgroundTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
