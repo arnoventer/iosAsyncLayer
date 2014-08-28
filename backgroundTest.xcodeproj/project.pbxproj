@@ -21,6 +21,12 @@
 		B5DF54F119ADE16D0031434D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF54D319ADE16D0031434D /* UIKit.framework */; };
 		B5DF54F919ADE16D0031434D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5DF54F719ADE16D0031434D /* InfoPlist.strings */; };
 		B5DF54FB19ADE16D0031434D /* backgroundTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */; };
+		F80121FEA3376A2D1E73433A /* SBStepUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F80126FAC0E7099789F11DBC /* SBStepUp.m */; };
+		F801252F98C489DCC8C8B5D8 /* MethodDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B44F946335984333BB6 /* MethodDelegates.m */; };
+		F801268070261535262C913A /* SomeLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B4C3C3873DE1D34A82E /* SomeLogic.m */; };
+		F80127D12AE6060FDD454060 /* BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012ABE5DCFB451D0125D4A /* BackgroundQueue.m */; };
+		F80129E32637E94477C5C06A /* DummyService.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B701E239296CA772AD3 /* DummyService.m */; };
+		F8012A1DD598E5272B027E2C /* ServiceCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012FB143FA25FBA8910E01 /* ServiceCaller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		B5DF54F619ADE16D0031434D /* backgroundTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "backgroundTestTests-Info.plist"; sourceTree = "<group>"; };
 		B5DF54F819ADE16D0031434D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backgroundTestTests.m; sourceTree = "<group>"; };
+		F80124FCD4EC324B4EBAD627 /* DummyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyService.h; sourceTree = "<group>"; };
+		F80126FAC0E7099789F11DBC /* SBStepUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStepUp.m; sourceTree = "<group>"; };
+		F801293B256B40977F2D53CA /* SBStepUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStepUp.h; sourceTree = "<group>"; };
+		F8012ABE5DCFB451D0125D4A /* BackgroundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundQueue.m; sourceTree = "<group>"; };
+		F8012B44F946335984333BB6 /* MethodDelegates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodDelegates.m; sourceTree = "<group>"; };
+		F8012B4C3C3873DE1D34A82E /* SomeLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeLogic.m; sourceTree = "<group>"; };
+		F8012B701E239296CA772AD3 /* DummyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyService.m; sourceTree = "<group>"; };
+		F8012C390995C6213F185830 /* MethodDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodDelegates.h; sourceTree = "<group>"; };
+		F8012C8741EB5E628E434065 /* SomeLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeLogic.h; sourceTree = "<group>"; };
+		F8012D21F9EDEC996E9B8B95 /* ServiceCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCaller.h; sourceTree = "<group>"; };
+		F8012DA2513B8FE744EE45F9 /* BackgroundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundQueue.h; sourceTree = "<group>"; };
+		F8012FB143FA25FBA8910E01 /* ServiceCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCaller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +137,18 @@
 				B5DF54E519ADE16D0031434D /* ViewController.m */,
 				B5DF54E719ADE16D0031434D /* Images.xcassets */,
 				B5DF54D619ADE16D0031434D /* Supporting Files */,
+				F80126FAC0E7099789F11DBC /* SBStepUp.m */,
+				F801293B256B40977F2D53CA /* SBStepUp.h */,
+				F8012B4C3C3873DE1D34A82E /* SomeLogic.m */,
+				F8012C8741EB5E628E434065 /* SomeLogic.h */,
+				F8012B44F946335984333BB6 /* MethodDelegates.m */,
+				F8012C390995C6213F185830 /* MethodDelegates.h */,
+				F8012ABE5DCFB451D0125D4A /* BackgroundQueue.m */,
+				F8012DA2513B8FE744EE45F9 /* BackgroundQueue.h */,
+				F8012FB143FA25FBA8910E01 /* ServiceCaller.m */,
+				F8012D21F9EDEC996E9B8B95 /* ServiceCaller.h */,
+				F8012B701E239296CA772AD3 /* DummyService.m */,
+				F80124FCD4EC324B4EBAD627 /* DummyService.h */,
 			);
 			path = backgroundTest;
 			sourceTree = "<group>";
@@ -252,6 +282,12 @@
 				B5DF54E619ADE16D0031434D /* ViewController.m in Sources */,
 				B5DF54E019ADE16D0031434D /* AppDelegate.m in Sources */,
 				B5DF54DC19ADE16D0031434D /* main.m in Sources */,
+				F80121FEA3376A2D1E73433A /* SBStepUp.m in Sources */,
+				F801268070261535262C913A /* SomeLogic.m in Sources */,
+				F801252F98C489DCC8C8B5D8 /* MethodDelegates.m in Sources */,
+				F80127D12AE6060FDD454060 /* BackgroundQueue.m in Sources */,
+				F8012A1DD598E5272B027E2C /* ServiceCaller.m in Sources */,
+				F80129E32637E94477C5C06A /* DummyService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +492,7 @@
 				B5DF550019ADE16D0031434D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5DF550119ADE16D0031434D /* Build configuration list for PBXNativeTarget "backgroundTestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +501,7 @@
 				B5DF550319ADE16D0031434D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

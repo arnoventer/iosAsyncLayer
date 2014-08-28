@@ -7,23 +7,34 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "SBStepUp.h"
+#import "SomeLogic.h"
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self methodThatCallsALogicMethodInTheBackground];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)methodThatCallsALogicMethodInTheBackground {
+
+//    MethodDelegates * objectWithCompletionMethods= [MethodDelegates create:self];
+//    objectWithCompletionMethods.completedSuccessfullySelector = @selector(orlo:);
+//    objectWithCompletionMethods.completedWithErrorSelector = @selector(error:);
+
+    MethodDelegates * objectWithCompletionMethods= [MethodDelegates create:self completed:@selector(orlo:) error:@selector(error:)];
+    async([SomeLogic thisMethodWillRunInBackground:objectWithCompletionMethods])
+}
+
+-(void)orlo:(NSString*)methodParam {
+    NSLog(@"orlo from the method");
+    NSLog(@"the param from the method: %@", methodParam);
+}
+
+-(void)error:(NSError*)methodParam {
+    NSLog(@"orlo from the method");
+    NSLog(@"the param from the method: %@", methodParam);
 }
 
 @end
