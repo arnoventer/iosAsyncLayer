@@ -62,6 +62,7 @@
 		B5DF54F819ADE16D0031434D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backgroundTestTests.m; sourceTree = "<group>"; };
 		D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backgroundTest.xcconfig"; path = "Pods/Pods-backgroundTest.xcconfig"; sourceTree = "<group>"; };
+		F801203B484A9DBD2A5395F4 /* ServiceCallerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCallerDelegate.h; sourceTree = "<group>"; };
 		F80124FCD4EC324B4EBAD627 /* DummyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyService.h; sourceTree = "<group>"; };
 		F80126FAC0E7099789F11DBC /* SBStepUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStepUp.m; sourceTree = "<group>"; };
 		F801293B256B40977F2D53CA /* SBStepUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStepUp.h; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				F8012D21F9EDEC996E9B8B95 /* ServiceCaller.h */,
 				F8012B701E239296CA772AD3 /* DummyService.m */,
 				F80124FCD4EC324B4EBAD627 /* DummyService.h */,
+				F801203B484A9DBD2A5395F4 /* ServiceCallerDelegate.h */,
 			);
 			path = backgroundTest;
 			sourceTree = "<group>";

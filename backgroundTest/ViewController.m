@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SBStepUp.h"
 #import "SomeLogic.h"
+#import "ServiceCaller.h"
 
 @implementation ViewController
 
@@ -24,7 +25,7 @@
 //    objectWithCompletionMethods.completedWithErrorSelector = @selector(error:);
 
     MethodDelegates * objectWithCompletionMethods= [MethodDelegates create:self completed:@selector(orlo:) error:@selector(error:)];
-    async([SomeLogic thisMethodWillRunInBackground:objectWithCompletionMethods])
+    async([[[SomeLogic alloc] initWithServiceCaller:[ServiceCaller new]] thisMethodWillRunInBackground:objectWithCompletionMethods])
 }
 
 -(void)orlo:(NSString*)methodParam {

@@ -6,10 +6,7 @@
 #import "MethodDelegates.h"
 #import "SBStepUp.h"
 
-
-@implementation MethodDelegates {
-
-}
+@implementation MethodDelegates
 
 - (id)initWithCaller:(id)caller {
     self = [super init];
@@ -49,56 +46,27 @@
 }
 
 - (void)completedSuccessfully:(id)response {
-//    id o = self.caller;
-//    if ([o respondsToSelector:self.completedSuccessfullySelector]) {
-//        [o performSelector:self.completedSuccessfullySelector withObject:response];
-//    }
-
-
-    //internet awesomeness
-//    SEL selector = NSSelectorFromString(@"someMethod");
-
-    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-//        __strong typeof(self) strongSelf = weakSelf;
-//        if (strongSelf) {
-//            IMP imp = [strongSelf.caller methodForSelector:strongSelf.completedSuccessfullySelector];
-//            void (*func)(id, SEL, id) = (void *) imp;
-//            func(strongSelf.caller, strongSelf.completedSuccessfullySelector, response);
         IMP imp = [_caller methodForSelector:_completedSuccessfullySelector];
         void (*func)(id, SEL, id) = (void *) imp;
         func(_caller, _completedSuccessfullySelector, response);
-//        }
     });
-
-
 }
 
 - (void)completedWithError:(NSError *)error {
-    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        __strong typeof(self) strongSelf = weakSelf;
-        if (strongSelf) {
-            IMP imp = [strongSelf.caller methodForSelector:strongSelf.completedSuccessfullySelector];
-            void (*func)(id, SEL, NSError *) = (void *) imp;
-            func(strongSelf.caller, strongSelf.completedSuccessfullySelector, error);
-        }
+        IMP imp = [_caller methodForSelector:_completedSuccessfullySelector];
+        void (*func)(id, SEL, NSError *) = (void *) imp;
+        func(_caller, _completedSuccessfullySelector, error);
     });
-
 }
 
 - (void)completedWithStepUp:(SBStepUp *)stepUp {
-
-    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        __strong typeof(self) strongSelf = weakSelf;
-        if (strongSelf) {
-            IMP imp = [strongSelf.caller methodForSelector:strongSelf.completedSuccessfullySelector];
-            void (*func)(id, SEL, SBStepUp *) = (void *) imp;
-            func(strongSelf.caller, strongSelf.completedSuccessfullySelector, stepUp);
-        }
+        IMP imp = [_caller methodForSelector:_completedSuccessfullySelector];
+        void (*func)(id, SEL, SBStepUp *) = (void *) imp;
+        func(_caller, _completedSuccessfullySelector, stepUp);
     });
-
 }
 
 

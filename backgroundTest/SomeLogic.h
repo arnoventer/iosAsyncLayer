@@ -6,8 +6,12 @@
 #import <Foundation/Foundation.h>
 
 @class MethodDelegates;
-
+@protocol ServiceCallerDelegate;
 
 @interface SomeLogic : NSObject
-+ (void)thisMethodWillRunInBackground:(MethodDelegates *)methods;
+
+- (id)initWithServiceCaller:(id <ServiceCallerDelegate>)caller;
+
+- (void)thisMethodWillRunInBackground:(MethodDelegates *)methods;
+
 @end

@@ -4,11 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ServiceCallerDelegate.h"
 
 
-@interface ServiceCaller : NSObject
+@interface ServiceCaller : NSObject <ServiceCallerDelegate>
 
 - (int)runMethodThatWaitsForItsBlocksToComplete;
 
-- (int)runMethodOnAFNetworking;
 @end

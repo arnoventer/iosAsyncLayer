@@ -4,23 +4,39 @@
 //
 
 #import "SomeLogic.h"
-#import "MethodDelegates.h"
 #import "ServiceCaller.h"
+#import "ServiceCallerDelegate.h"
 
+
+@interface SomeLogic()
+
+@property id<ServiceCallerDelegate> serviceCaller;
+
+@end
 
 @implementation SomeLogic {
 
 }
 
-+ (void)thisMethodWillRunInBackground:(MethodDelegates *)methods  {
+- (id)initWithServiceCaller:(id<ServiceCallerDelegate>)caller {
+    self = [super init];
+    if (self) {
+        self.serviceCaller = caller;
+    }
+
+    return self;
+}
+
+
+- (void)thisMethodWillRunInBackground:(MethodDelegates *)methods  {
     //code here
 
-    ServiceCaller * serviceCaller = [ServiceCaller new];
+    id<ServiceCallerDelegate> serviceCaller = self.serviceCaller;
 //    [serviceCaller runMethodThatWaitsForItsBlocksToComplete];
 
     int result = [serviceCaller runMethodOnAFNetworking];
 
-    if(1 == 1) {
+    if(result != -1) {
         [methods completedSuccessfully:@"ohai"];
     } else {
         [methods completedWithError:[NSError new]];
