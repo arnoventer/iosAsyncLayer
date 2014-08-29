@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6FE6E8C2B54E93A1A97BD2 /* libPods-backgroundTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA68821260644EB82B9DF51 /* libPods-backgroundTestTests.a */; };
 		B5DF54D019ADE16D0031434D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF54CF19ADE16D0031434D /* Foundation.framework */; };
 		B5DF54D219ADE16D0031434D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF54D119ADE16D0031434D /* CoreGraphics.framework */; };
 		B5DF54D419ADE16D0031434D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DF54D319ADE16D0031434D /* UIKit.framework */; };
@@ -28,6 +29,8 @@
 		F80127D12AE6060FDD454060 /* BackgroundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012ABE5DCFB451D0125D4A /* BackgroundQueue.m */; };
 		F80129E32637E94477C5C06A /* DummyService.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012B701E239296CA772AD3 /* DummyService.m */; };
 		F8012A1DD598E5272B027E2C /* ServiceCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012FB143FA25FBA8910E01 /* ServiceCaller.m */; };
+		F8012ABDD8E80D1A3C76B3DA /* SomeLogicAsyncWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8012907B700F7EAB455388F /* SomeLogicAsyncWrapper.m */; };
+		F8012EB2DF3BCC7CBB22B3A4 /* DummyDiFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F80127BB255830614B3E6806 /* DummyDiFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		1857F0F471F84731BB933F43 /* libPods-backgroundTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-backgroundTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA68821260644EB82B9DF51 /* libPods-backgroundTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-backgroundTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABBB97EFC1124BCBAB277298 /* Pods-backgroundTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backgroundTestTests.xcconfig"; path = "Pods/Pods-backgroundTestTests.xcconfig"; sourceTree = "<group>"; };
 		B5DF54CC19ADE16D0031434D /* backgroundTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = backgroundTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DF54CF19ADE16D0031434D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5DF54D119ADE16D0031434D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +68,13 @@
 		B5DF54FA19ADE16D0031434D /* backgroundTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backgroundTestTests.m; sourceTree = "<group>"; };
 		D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backgroundTest.xcconfig"; path = "Pods/Pods-backgroundTest.xcconfig"; sourceTree = "<group>"; };
 		F801203B484A9DBD2A5395F4 /* ServiceCallerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCallerDelegate.h; sourceTree = "<group>"; };
+		F801231B7854E93B8D8E074B /* SomeLogicAsyncWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeLogicAsyncWrapper.h; sourceTree = "<group>"; };
+		F80123C6C24A2FBF5F7E2CF9 /* SomeLogicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeLogicDelegate.h; sourceTree = "<group>"; };
+		F80123F11F045F7E1ABA4A03 /* SomeLogicAsyncWrapperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeLogicAsyncWrapperDelegate.h; sourceTree = "<group>"; };
 		F80124FCD4EC324B4EBAD627 /* DummyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyService.h; sourceTree = "<group>"; };
 		F80126FAC0E7099789F11DBC /* SBStepUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStepUp.m; sourceTree = "<group>"; };
+		F80127BB255830614B3E6806 /* DummyDiFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyDiFactory.m; sourceTree = "<group>"; };
+		F8012907B700F7EAB455388F /* SomeLogicAsyncWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeLogicAsyncWrapper.m; sourceTree = "<group>"; };
 		F801293B256B40977F2D53CA /* SBStepUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStepUp.h; sourceTree = "<group>"; };
 		F8012ABE5DCFB451D0125D4A /* BackgroundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundQueue.m; sourceTree = "<group>"; };
 		F8012B44F946335984333BB6 /* MethodDelegates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodDelegates.m; sourceTree = "<group>"; };
@@ -72,6 +82,7 @@
 		F8012B701E239296CA772AD3 /* DummyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyService.m; sourceTree = "<group>"; };
 		F8012C390995C6213F185830 /* MethodDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodDelegates.h; sourceTree = "<group>"; };
 		F8012C8741EB5E628E434065 /* SomeLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeLogic.h; sourceTree = "<group>"; };
+		F8012C966C44056F807E4E7F /* DummyDiFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyDiFactory.h; sourceTree = "<group>"; };
 		F8012D21F9EDEC996E9B8B95 /* ServiceCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCaller.h; sourceTree = "<group>"; };
 		F8012DA2513B8FE744EE45F9 /* BackgroundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundQueue.h; sourceTree = "<group>"; };
 		F8012FB143FA25FBA8910E01 /* ServiceCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCaller.m; sourceTree = "<group>"; };
@@ -96,6 +107,7 @@
 				B5DF54EF19ADE16D0031434D /* XCTest.framework in Frameworks */,
 				B5DF54F119ADE16D0031434D /* UIKit.framework in Frameworks */,
 				B5DF54F019ADE16D0031434D /* Foundation.framework in Frameworks */,
+				3A6FE6E8C2B54E93A1A97BD2 /* libPods-backgroundTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +122,7 @@
 				B5DF54CE19ADE16D0031434D /* Frameworks */,
 				B5DF54CD19ADE16D0031434D /* Products */,
 				D76218D73AF641A2BCCB1922 /* Pods-backgroundTest.xcconfig */,
+				ABBB97EFC1124BCBAB277298 /* Pods-backgroundTestTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +143,7 @@
 				B5DF54D319ADE16D0031434D /* UIKit.framework */,
 				B5DF54EE19ADE16D0031434D /* XCTest.framework */,
 				1857F0F471F84731BB933F43 /* libPods-backgroundTest.a */,
+				1DA68821260644EB82B9DF51 /* libPods-backgroundTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +171,12 @@
 				F8012B701E239296CA772AD3 /* DummyService.m */,
 				F80124FCD4EC324B4EBAD627 /* DummyService.h */,
 				F801203B484A9DBD2A5395F4 /* ServiceCallerDelegate.h */,
+				F8012907B700F7EAB455388F /* SomeLogicAsyncWrapper.m */,
+				F801231B7854E93B8D8E074B /* SomeLogicAsyncWrapper.h */,
+				F80123C6C24A2FBF5F7E2CF9 /* SomeLogicDelegate.h */,
+				F80127BB255830614B3E6806 /* DummyDiFactory.m */,
+				F8012C966C44056F807E4E7F /* DummyDiFactory.h */,
+				F80123F11F045F7E1ABA4A03 /* SomeLogicAsyncWrapperDelegate.h */,
 			);
 			path = backgroundTest;
 			sourceTree = "<group>";
@@ -216,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5DF550119ADE16D0031434D /* Build configuration list for PBXNativeTarget "backgroundTestTests" */;
 			buildPhases = (
+				025F03CEF4974FC5B44AD592 /* Check Pods Manifest.lock */,
 				B5DF54E919ADE16D0031434D /* Sources */,
 				B5DF54EA19ADE16D0031434D /* Frameworks */,
 				B5DF54EB19ADE16D0031434D /* Resources */,
+				5C342FA1BB7E4B5DA657C5FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,8 +277,6 @@
 			mainGroup = B5DF54C319ADE16D0031434D;
 			productRefGroup = B5DF54CD19ADE16D0031434D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				B5DF54CB19ADE16D0031434D /* backgroundTest */,
@@ -287,6 +307,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		025F03CEF4974FC5B44AD592 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0E88C12C1A0B490492EB7CB9 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +335,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C342FA1BB7E4B5DA657C5FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-backgroundTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5DC6324B968241D3AB43F44F /* Copy Pods Resources */ = {
@@ -333,6 +383,8 @@
 				F80127D12AE6060FDD454060 /* BackgroundQueue.m in Sources */,
 				F8012A1DD598E5272B027E2C /* ServiceCaller.m in Sources */,
 				F80129E32637E94477C5C06A /* DummyService.m in Sources */,
+				F8012ABDD8E80D1A3C76B3DA /* SomeLogicAsyncWrapper.m in Sources */,
+				F8012EB2DF3BCC7CBB22B3A4 /* DummyDiFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +536,7 @@
 		};
 		B5DF550219ADE16D0031434D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABBB97EFC1124BCBAB277298 /* Pods-backgroundTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/backgroundTest.app/backgroundTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -506,6 +559,7 @@
 		};
 		B5DF550319ADE16D0031434D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABBB97EFC1124BCBAB277298 /* Pods-backgroundTestTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/backgroundTest.app/backgroundTest";
 				FRAMEWORK_SEARCH_PATHS = (

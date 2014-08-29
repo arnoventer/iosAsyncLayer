@@ -55,17 +55,17 @@
 
 - (void)completedWithError:(NSError *)error {
     dispatch_async(dispatch_get_main_queue(), ^{
-        IMP imp = [_caller methodForSelector:_completedSuccessfullySelector];
+        IMP imp = [_caller methodForSelector:_completedWithErrorSelector];
         void (*func)(id, SEL, NSError *) = (void *) imp;
-        func(_caller, _completedSuccessfullySelector, error);
+        func(_caller, _completedWithErrorSelector, error);
     });
 }
 
 - (void)completedWithStepUp:(SBStepUp *)stepUp {
     dispatch_async(dispatch_get_main_queue(), ^{
-        IMP imp = [_caller methodForSelector:_completedSuccessfullySelector];
+        IMP imp = [_caller methodForSelector:_completedWithStepUpSelector];
         void (*func)(id, SEL, SBStepUp *) = (void *) imp;
-        func(_caller, _completedSuccessfullySelector, stepUp);
+        func(_caller, _completedWithStepUpSelector, stepUp);
     });
 }
 

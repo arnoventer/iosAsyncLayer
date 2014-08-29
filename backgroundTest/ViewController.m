@@ -10,12 +10,13 @@
 #import "SBStepUp.h"
 #import "SomeLogic.h"
 #import "ServiceCaller.h"
+#import "DummyDiFactory.h"
+#import "SomeLogicAsyncWrapper.h"
 
 @implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self methodThatCallsALogicMethodInTheBackground];
 }
 
 - (void)methodThatCallsALogicMethodInTheBackground {
@@ -25,17 +26,25 @@
 //    objectWithCompletionMethods.completedWithErrorSelector = @selector(error:);
 
     MethodDelegates * objectWithCompletionMethods= [MethodDelegates create:self completed:@selector(orlo:) error:@selector(error:)];
-    async([[[SomeLogic alloc] initWithServiceCaller:[ServiceCaller new]] thisMethodWillRunInBackground:objectWithCompletionMethods])
+
+    id someLogicAsyncWrapper = @0;
+    SomeLogicAsyncWrapper*wrapper =(SomeLogicAsyncWrapper*)[[DummyDiFactory instance] resolve:someLogicAsyncWrapper];
+
+    async([wrapper loginInBackground:objectWithCompletionMethods])
 }
 
--(void)orlo:(NSString*)methodParam {
+-(void)orlo:(NSNumber *)methodParam {
     NSLog(@"orlo from the method");
-    NSLog(@"the param from the method: %@", methodParam);
+    NSLog(@"the param from the method: %d", methodParam.intValue);
 }
 
 -(void)error:(NSError*)methodParam {
     NSLog(@"orlo from the method");
     NSLog(@"the param from the method: %@", methodParam);
+}
+
+- (IBAction)makeTheServiceCall:(id)sender {
+    [self methodThatCallsALogicMethodInTheBackground];
 }
 
 @end

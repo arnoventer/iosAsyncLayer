@@ -4,14 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SomeLogicDelegate.h"
 
-@class MethodDelegates;
 @protocol ServiceCallerDelegate;
 
-@interface SomeLogic : NSObject
+@interface SomeLogic : NSObject <SomeLogicDelegate>
 
 - (id)initWithServiceCaller:(id <ServiceCallerDelegate>)caller;
-
-- (void)thisMethodWillRunInBackground:(MethodDelegates *)methods;
 
 @end

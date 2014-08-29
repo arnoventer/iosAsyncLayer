@@ -5,8 +5,6 @@
 
 #import "SomeLogic.h"
 #import "ServiceCaller.h"
-#import "ServiceCallerDelegate.h"
-
 
 @interface SomeLogic()
 
@@ -28,19 +26,24 @@
 }
 
 
-- (void)thisMethodWillRunInBackground:(MethodDelegates *)methods  {
-    //code here
+- (NSNumber *)login:(NSError **)error  {
 
     id<ServiceCallerDelegate> serviceCaller = self.serviceCaller;
-//    [serviceCaller runMethodThatWaitsForItsBlocksToComplete];
 
     int result = [serviceCaller runMethodOnAFNetworking];
 
-    if(result != -1) {
-        [methods completedSuccessfully:@"ohai"];
-    } else {
-        [methods completedWithError:[NSError new]];
+    //
+    //do some logic with the service response;
+    //
+
+    //if it fails set the error
+    if(result == -1)
+    {
+        *error = [NSError new];
     }
+
+    //return the response
+    return @(result);
 }
 
 @end

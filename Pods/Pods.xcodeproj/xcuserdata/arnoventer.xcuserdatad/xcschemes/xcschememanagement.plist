@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-backgroundTestTests-OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-backgroundTestTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2BA2300D08BB43FEACFA77F1</key>
+		<key>0794A4CC101F4E97A4711BEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>35BF3E4DF86F4CE19900FCFE</key>
+		<key>897E70608FAB43FE958802AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F09E0BEA201449FAB9C2B60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CF065EE695F436CBE119E4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
